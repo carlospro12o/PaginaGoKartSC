@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Karting Zone - La mejor pista de karting de la ciudad. Alquiler de karts, torneos, fiestas de cumpleaños y más.">
+  <title>Karting Zone | Velocidad Extrema</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Racing+Sans+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- ===== HEADER / NAVEGACIÓN ===== -->
+  <header class="header" id="header">
+    <div class="header__container container">
+      <a href="#" class="header__logo">
+        <i class="fas fa-helmet-safety"></i> GoKartSC
+      </a>
+      <nav class="nav" id="nav-menu">
+        <ul class="nav__list">
+          <li><a href="#hero" class="nav__link active-link">Inicio</a></li>
+          <li><a href="#info" class="nav__link">Info</a></li>
+          <li><a href="#precios" class="nav__link">Precios</a></li>
+          <li><a href="#menu" class="nav__link">Menú</a></li>
+          <li><a href="#reservas" class="nav__link">Reservas</a></li>
+          <li><a href="#contacto" class="nav__link">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="header__toggle" id="nav-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="hero">
+    <div class="hero__overlay"></div>
+    <div class="hero__content container">
+      <h1 class="hero__title reveal">VIVE LA <span class="text--accent">VELOCIDAD</span></h1>
+      <p class="hero__subtitle reveal">Siente la adrenalina en nuestra pista profesional de karting. La experiencia más extrema te espera.</p>
+      <div class="hero__cta reveal">
+        <a href="#reservas" class="btn btn--primary">Reserva Ahora</a>
+        <a href="#info" class="btn btn--outline">Descubre Más</a>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span>Desliza</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- ===== SECCIÓN INFORMACIÓN ===== -->
+  <section class="section info" id="info">
+    <div class="container">
+      <h2 class="section__title reveal">LA EXPERIENCIA KARTING</h2>
+      <p class="section__subtitle reveal">Todo lo que necesitas saber sobre nosotros</p>
+      <div class="info__grid">
+        <article class="info__card reveal">
+          <div class="info__icon"><i class="fas fa-flag-checkered"></i></div>
+          <h3 class="info__title">Pista Profesional</h3>
+          <p class="info__text">Circuito de 200m con curvas peraltadas, recta principal de 50m y zona de adelantamiento. Seguridad certificada.</p>
+        </article>
+        <article class="info__card reveal">
+          <div class="info__icon"><i class="fas fa-tachometer-alt"></i></div>
+          <h3 class="info__title">Karts de Alto Rendimiento</h3>
+          <p class="info__text">Karts eléctricos silenciosos con velocidad regulable (hasta 40 km/h), chasis reforzado, cinturones de 3 puntos.</p>
+        </article>
+        <article class="info__card reveal">
+          <div class="info__icon"><i class="fas fa-trophy"></i></div>
+          <h3 class="info__title">Torneos & Eventos</h3>
+          <p class="info__text">Premios en efectivo y trofeos para los ganadores.</p>
+        </article>
+      </div>
+      <div class="info__stats reveal">
+        <div class="stat">
+          <span class="stat__num" data-target="6">0</span>
+          <span class="stat__label">Meses de Experiencia</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num" data-target="1453">0</span>
+          <span class="stat__label">Clientes Satisfechos</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num" data-target="1">0</span>
+          <span class="stat__label">Pistas Disponibles</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECCIÓN PRECIOS ===== -->
+  <section class="section precios" id="precios">
+    <div class="container">
+      <h2 class="section__title reveal">PLANES Y PRECIOS</h2>
+      <p class="section__subtitle reveal">Elige el paquete que más se adapte a ti</p>
+      <div class="precios__grid">
+        <article class="precios__card reveal">
+          <div class="precios__badge">Popular</div>
+          <h3 class="precios__title">Individual</h3>
+          <p class="precios__price"><span>$10</span> / sesión</p>
+          <ul class="precios__features">
+            <li><i class="fas fa-check"></i> 7 vueltas</li>
+            <li><i class="fas fa-check"></i> Kart sencillo</li>
+            <li><i class="fas fa-check"></i> Casco incluido</li>
+            <li><i class="fas fa-check"></i> Protector de calvicula</li>
+          </ul>
+          <a href="#reservas" class="btn btn--primary">Elegir Plan</a>
+        </article>
+        <article class="precios__card precios__card--featured reveal">
+          <div class="precios__badge precios__badge--featured">Popular</div>
+          <h3 class="precios__title">Doble</h3>
+          <p class="precios__price"><span>$12</span> / sesión</p>
+          <ul class="precios__features">
+            <li><i class="fas fa-check"></i> 7 vueltas</li>
+            <li><i class="fas fa-check"></i> Kart doble biplaza</li>
+            <li><i class="fas fa-check"></i> 2 cascos incluidos</li>
+            <li><i class="fas fa-check"></i> 2 protectores de clavicula</li>
+          </ul>
+          <a href="#reservas" class="btn btn--primary">Elegir Plan</a>
+        </article>
+        <article class="precios__card reveal">
+          <div class="precios__badge">Premium</div>
+          <h3 class="precios__title">Combo Grupal</h3>
+          <p class="precios__price"><span>$40</span> / 4 personas</p>
+          <ul class="precios__features">
+            <li><i class="fas fa-check"></i> 12 vueltas</li>
+            <li><i class="fas fa-check"></i> 4 karts individuales</li>
+            <li><i class="fas fa-check"></i> 4 cascos incluidos</li>
+            <li><i class="fas fa-check"></i> 4 Protectores de Clavicula</li>
+          </ul>
+          <a href="#reservas" class="btn btn--primary">Elegir Plan</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECCIÓN SNACKS (MENÚ) ===== -->
+  <section class="section menu" id="menu">
+    <div class="container">
+      <h2 class="section__title reveal">SNACKS & BOCADILLOS</h2>
+      <p class="section__subtitle reveal">Recarga energías con nuestros snacks</p>
+      <div class="menu__grid">
+        <div class="menu__item reveal"><img src="https://placehold.co/200x200/E10600/white?text=Doritos" alt="Doritos"><h4>Doritos</h4><span class="menu__price">$1.00</span></div>
+        <div class="menu__item reveal"><img src="https://placehold.co/200x200/E10600/white?text=De+Todito" alt="De Todito"><h4>De Todito</h4><span class="menu__price">$1.00</span></div>
+        <div class="menu__item reveal"><img src="https://placehold.co/200x200/E10600/white?text=Cheese+Tris" alt="Cheese Tris"><h4>Cheese Tris</h4><span class="menu__price">$1.00</span></div>
+        <div class="menu__item reveal"><img src="https://placehold.co/200x200/E10600/white?text=Pepito" alt="Pepito"><h4>Pepito</h4><span class="menu__price">$1.00</span></div>
+        <div class="menu__item reveal"><img src="https://placehold.co/200x200/E10600/white?text=Natuchips" alt="Natuchips"><h4>Natuchips</h4><span class="menu__price">$1.00</span></div>
+        <div class="menu__item reveal"><img src="https://placehold.co/200x200/E10600/white?text=Samba" alt="Samba"><h4>Samba</h4><span class="menu__price">$1.50</span></div>
+        <div class="menu__item reveal"><img src="https://placehold.co/200x200/E10600/white?text=Chupeta" alt="Chupeta"><h4>Chupeta</h4><span class="menu__price">$1000 Cop</span></div>
+        <div class="menu__item reveal"><img src="https://placehold.co/200x200/E10600/white?text=Galak" alt="Galak"><h4>Galak</h4><span class="menu__price">$2.00</span></div>
+        <div class="menu__item reveal"><img src="https://placehold.co/200x200/E10600/white?text=Cerveza" alt="Cerveza"><h4>Cerveza</h4><span class="menu__price">$1.25</span></div>
+        <div class="menu__item reveal"><img src="https://placehold.co/200x200/E10600/white?text=Refresco" alt="Refresco de lata"><h4>Refresco de lata</h4><span class="menu__price">$1.50</span></div>
+        <div class="menu__item reveal"><img src="https://placehold.co/200x200/E10600/white?text=Ponqu%C3%A9s" alt="Ponqués"><h4>Ponqués</h4><span class="menu__price">$1.00</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECCIÓN COMIDA ===== -->
+  <section class="section comida">
+    <div class="container">
+      <h2 class="section__title reveal">COMIDA RÁPIDA</h2>
+      <p class="section__subtitle reveal">Lo mejor para saciar el apetito después de la carrera</p>
+      <div class="comida__grid">
+        <div class="comida__card reveal">
+          <div class="comida__img"><img src="https://placehold.co/400x300/1a1a1a/E10600?text=Perros+Calientes" alt="Perros calientes"></div>
+          <div class="comida__body">
+            <h3>Perros Calientes</h3>
+            <p>Salchicha alemana, pan artesanal, salsas de la casa y queso gratinado.</p>
+            <span class="comida__price">$2.00</span>
+          </div>
+        </div>
+        <div class="comida__card reveal">
+          <div class="comida__img"><img src="https://placehold.co/400x300/1a1a1a/E10600?text=Teque%C3%B1os" alt="Tequeños"></div>
+          <div class="comida__body">
+            <h3>Tequeños</h3>
+            <p>Palitos de queso mozzarella envueltos en masa crocante. Porción 6 unidades.</p>
+            <span class="comida__price">$5.00</span>
+          </div>
+        </div>
+        <div class="comida__card reveal">
+          <div class="comida__img"><img src="https://placehold.co/400x300/1a1a1a/E10600?text=Helado" alt="Helado"></div>
+          <div class="comida__body">
+            <h3>Helado</h3>
+            <p>Helado artesanal de vainilla o chocolate.</p>
+            <span class="comida__price">$2.00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECCIÓN COCTELERÍA ===== -->
+  <section class="section cocteleria">
+    <div class="container">
+      <h2 class="section__title reveal">BARRA DE COCTELES</h2>
+      <p class="section__subtitle reveal">Los mejores cócteles para celebraciones y after-race</p>
+      <div class="cocteleria__grid">
+        <div class="cocteleria__item reveal"><i class="fas fa-cocktail"></i><h4>Mojito de Parchita</h4><p>Ron, parchita, hierbabuena, soda</p><span>$8.00</span></div>
+        <div class="cocteleria__item reveal"><i class="fas fa-sun"></i><h4>Sol de Verano</h4><p>Vodka, naranja, granadina, hielo</p><span>$7.50</span></div>
+        <div class="cocteleria__item reveal"><i class="fas fa-wine-glass-alt"></i><h4>Cuba Libre</h4><p>Ron, cola, limón, hielo</p><span>$7.00</span></div>
+        <div class="cocteleria__item reveal"><i class="fas fa-leaf"></i><h4>Mojito Tradicional</h4><p>Ron, limón, hierbabuena, soda</p><span>$7.00</span></div>
+        <div class="cocteleria__item reveal"><i class="fas fa-glass-whiskey"></i><h4>Tom Collins</h4><p>Ginebra, limón, soda, azúcar</p><span>$8.50</span></div>
+        <div class="cocteleria__item reveal"><i class="fas fa-glass-martini-alt"></i><h4>Gin Tonic</h4><p>Ginebra premium, tónica, rodaja de limón</p><span>$9.00</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECCIÓN RESERVAS Y CUMPLEAÑOS ===== -->
+  <section class="section reservas" id="reservas">
+    <div class="container">
+      <h2 class="section__title reveal">RESERVAS</h2>
+      <p class="section__subtitle reveal">Reserva tu experiencia y te enviaremos la confirmación por WhatsApp</p>
+      <div class="reservas__grid">
+        <form class="reservas__form reveal" id="reservas-form">
+          <h3>Haz tu reserva</h3>
+          <div class="form__group">
+            <input type="text" id="nombre" placeholder="Nombre completo" required>
+          </div>
+          <div class="form__group">
+            <input type="email" id="email" placeholder="Correo electrónico" required>
+          </div>
+          <div class="form__group">
+            <input type="tel" id="telefono" placeholder="Teléfono" required>
+          </div>
+          <div class="form__group">
+            <input type="date" id="fecha" required>
+          </div>
+          <div class="form__group">
+            <select id="tipo-reserva" required>
+              <option value="">Selecciona tipo de reserva</option>
+              <option value="individual">Pista Individual</option>
+              <option value="doble">Kart Doble</option>
+              <option value="grupal">Combo Grupal</option>
+              <option value="torneo">Torneo</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <textarea id="mensaje" rows="4" placeholder="Mensaje o requerimientos especiales"></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Enviar Reserva</button>
+          <p class="form__msg" id="form-msg"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECCIÓN CONTACTO Y UBICACIÓN ===== -->
+  <section class="section contacto" id="contacto">
+    <div class="container">
+      <h2 class="section__title reveal">CONTACTO & UBICACIÓN</h2>
+      <p class="section__subtitle reveal">Estamos listos para atenderte</p>
+      <div class="contacto__grid">
+        <div class="contacto__info reveal">
+          <div class="contacto__item"><i class="fas fa-map-marker-alt"></i><div><h4>Dirección</h4><p>Av. Principal, Zona Industrial, Local 42, Ciudad</p></div></div>
+          <div class="contacto__item"><i class="fas fa-phone-alt"></i><div><h4>Teléfono</h4><p>+58 424-1234567</p></div></div>
+          <div class="contacto__item"><i class="fas fa-envelope"></i><div><h4>Email</h4><p>info@kartingzone.com</p></div></div>
+          <div class="contacto__item"><i class="fas fa-clock"></i><div><h4>Horario</h4><p>Lun-Dom: 3:00 PM - 10:00 PM</p></div></div>
+          <div class="contacto__social">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+<div class="contacto__map reveal">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.4308883896465!2d-72.22885992507087!3d7.76789739225868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e665dc2704e77af%3A0x4f6a78c5b0a09d11!2sRR42%2B62%2C%20San%20Crist%C3%B3bal%205001%2C%20T%C3%A1chira!5e0!3m2!1ses-419!2sve!4v1716410000000" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" title="Ubicación Karting Zone - San Cristóbal, Táchira"></iframe>
+</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__brand">
+        <i class="fas fa-helmet-safety"></i> Karting Zone
+        <p>Vive la velocidad. Siente la adrenalina.</p>
+      </div>
+      <div class="footer__links">
+        <h4>Enlaces Rápidos</h4>
+        <ul>
+          <li><a href="#hero">Inicio</a></li>
+          <li><a href="#info">Información</a></li>
+          <li><a href="#precios">Precios</a></li>
+          <li><a href="#menu">Menú</a></li>
+          <li><a href="#reservas">Reservas</a></li>
+        </ul>
+      </div>
+      <div class="footer__legal">
+        <p>&copy; 2026 Karting Zone. Todos los derechos reservados.</p>
+        <p><a href="#">Términos y Condiciones</a> | <a href="#">Política de Privacidad</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
