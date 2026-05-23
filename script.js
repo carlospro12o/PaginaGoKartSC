@@ -148,13 +148,13 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ============================================================
-  // 6. FORMULARIO DE RESERVAS - Envío por WhatsApp
-  //    Toma los datos del formulario y abre WhatsApp con el
-  //    mensaje pre-llenado para enviar al número de contacto.
+  // 6. FORMULARIO DE RESERVAS - Envío por correo electrónico
+  //    Toma los datos del formulario y abre el cliente de correo
+  //    con los datos pre-llenados para enviar al destinatario.
   // ============================================================
   const reservasForm = document.getElementById('reservas-form');
   const formMsg = document.getElementById('form-msg');
-  const WHATSAPP_NUMBER = '584241234567'; // +58 424-1234567 sin signos
+  const EMAIL_DESTINO = 'gokart.sc.lc@gmail.com';
 
   if (reservasForm) {
     reservasForm.addEventListener('submit', (e) => {
@@ -179,23 +179,21 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      // Construir mensaje para WhatsApp
-      const textoWhatsApp = encodeURIComponent(
-        `🏁 *Nueva Reserva Karting Zone* 🏁%0A%0A` +
-        `*Nombre:* ${nombre}%0A` +
-        `*Email:* ${email}%0A` +
-        `*Teléfono:* ${telefono}%0A` +
-        `*Fecha:* ${fecha}%0A` +
-        `*Tipo:* ${tipo}%0A` +
-        (mensaje ? `*Mensaje:* ${mensaje}` : '')
-      );
+      const asunto = encodeURIComponent('Nueva Reserva Karting Zone');
+      const cuerpo =
+        `🏁 Nueva Reserva Karting Zone 🏁\n\n` +
+        `Nombre: ${nombre}\n` +
+        `Email: ${email}\n` +
+        `Teléfono: ${telefono}\n` +
+        `Fecha: ${fecha}\n` +
+        `Tipo: ${tipo}\n` +
+        (mensaje ? `Mensaje: ${mensaje}` : '');
 
-      // Mostrar mensaje de éxito y redirigir a WhatsApp
-      formMsg.textContent = '✅ Redirigiendo a WhatsApp...';
+      formMsg.textContent = '✅ Abriendo cliente de correo...';
       formMsg.className = 'form__msg form__msg--success';
 
       setTimeout(() => {
-        window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${textoWhatsApp}`, '_blank');
+        window.location.href = `mailto:${EMAIL_DESTINO}?subject=${asunto}&body=${encodeURIComponent(cuerpo)}`;
         reservasForm.reset();
         setTimeout(() => {
           formMsg.textContent = '';
